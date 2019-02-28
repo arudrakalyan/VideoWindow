@@ -366,10 +366,10 @@ const Filmstrip = {
         if (thumbs.remoteThumbs) {
             thumbs.remoteThumbs.css({
                 display: 'inline-block',
-                height: `${remote.thumbHeight}px`,
-                'min-height': `${remote.thumbHeight}px`,
-                'min-width': `${remote.thumbWidth}px`,
-                width: `${remote.thumbWidth}px`
+                height: `${remote.thumbHeight + 40}px`,
+                'min-height': `${remote.thumbHeight + 40}px`,
+                'min-width': `${remote.thumbWidth + 40}px`,
+                width: `${remote.thumbWidth + 40}px`
             });
         }
 

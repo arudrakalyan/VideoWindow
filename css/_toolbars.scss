@@ -370,36 +370,36 @@
 }
 .button-group-controls{
   margin-left: 60px;
-  margin-bottom: 180px;
+  margin-bottom: 220px;
   position: relative;
   z-index: 5;
-  width: 160px;
+  width: 100px;
   .button-group-thick{
     .microphone{
       background-image:url('./images/mic-unmute@3x.png');
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 150px;
-      width: 150px;
+      height: 100px;
+      width: 100px;
       display: block;
     }
     .microphone-disabled{
       background-image:url('./images/mic-mute@3x.png');
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 150px;
-      width: 150px;
+      height: 100px;
+      width: 100px;
       display: block;
     }
-    .hangup-img{
-      bottom: 16px;
+    .hangup-img {
+      bottom: 10px;
       background-image: url('./images/hangup@3x.png');
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 55px;
-      width: 55px;
+      height: 35px;
+      width: 35px;
       display: inline-block;
-      right: 10px;
+      right: 0;
       position: absolute;
     }
   }
@@ -409,51 +409,53 @@
       background-image:url('./images/mic-mute-transparent@3x.png');
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 150px;
-      width: 150px;
+      height: 100px;
+      width: 100px;
       display: block;
     }
     .microphone-disabled{
       background-image:url('./images/mic-mute@3x.png');
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 150px;
-      width: 150px;
+      height: 100px;
+      width: 100px;
       display: block;
     }
     .volume-button{
-      bottom: 0px;
+      bottom: -2px;
       background-image: url('./images/speaker-mute@3x.png');
       background-repeat: no-repeat;
       background-size: 100%;
-      height: 70px;
-      width: 70px;
+      height: 50px;
+      width: 50px;
       display: inline-block;
-      right: 1px;
+      right: -8px;
       position: absolute;
     }
   }
 
-    .pen-tool{
-      background-image: url('./images/pen-tool@3x.png');
-      background-repeat: no-repeat;
-      background-size: 100%;
-      height: 65px;
-      width: 65px;
-      background-color: transparent;
-      border:none;
-      margin: 0 auto 50px;
-      display: block;
-      padding: 0;
-    }
+  .pen-tool{
+    background-image: url('./images/pen-tool@3x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border:none;
+    margin: 0 auto 20px;
+    display: block;
+    padding: 0;
+  }
 }
 
 .logo-element {
   background-image: url('./images/vodafone.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 65px;
-  width: 65px;
-  margin: 50px auto 0;
+  height: 50px;
+  width: 50px;
+  margin: 20px auto 0;
   display: block;
+  position: absolute;
+  left: calc( 50% - 25px);
 }

@@ -75,3 +75,39 @@
         }
     }
 }
+
+.flimstip-icon-mic-disabled{
+    width: 12px;
+    height: 18px;
+    background-image: url('./images/mute-small@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+
+.flimstip-icon-mic{
+    width: 12px;
+    height: 18px;
+    background-image: url('./images/mic-small@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+
+.indicator-icon-container {
+    &.videoMuted {
+        &.toolbar-icon {
+            display: none;
+        }
+    }
+    &.focusindicator{
+        &.toolbar-icon{
+            display: none;
+        }
+     }
+  }
+
+.connection-indicator, #dominantspeakerindicator, .videocontainer__toptoolbar{
+    display: none;
+}
