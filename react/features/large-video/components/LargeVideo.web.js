@@ -19,11 +19,25 @@ export default class LargeVideo extends Component<{}> {
      * @inheritdoc
      * @returns {React$Element}
      */
+    constructor(props) {
+        super(props);
+        this.state = {
+            sidebarOpen: true
+        };
+        this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+    }
+
+    onSetSidebarOpen(open) {
+        this.setState({ sidebarOpen: open });
+    }
+
     render() {
         return (
             <div
                 className = 'videocontainer'
                 id = 'largeVideoContainer'>
+                    <div className="burger-menu" />
+
                 <div className='logo-element' />
                 <div id = 'sharedVideo'>
                     <div id = 'sharedVideoIFrame' />
