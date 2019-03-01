@@ -398,9 +398,10 @@ export default class LargeVideoManager {
 
     /**
      * Updates the src of the dominant speaker avatar
+     * avatar image code commented
      */
     updateAvatar(avatarUrl) {
-        if (avatarUrl) {
+        /*if (avatarUrl) {
             ReactDOM.render(
                 <Avatar
                     id = "dominantSpeakerAvatar"
@@ -410,7 +411,7 @@ export default class LargeVideoManager {
         } else {
             ReactDOM.unmountComponentAtNode(
                 this._dominantSpeakerAvatarContainer);
-        }
+        }*/
     }
 
     /**

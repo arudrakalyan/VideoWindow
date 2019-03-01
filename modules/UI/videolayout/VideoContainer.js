@@ -647,7 +647,7 @@ export class VideoContainer extends LargeContainer {
     setLargeVideoBackground(isAvatar) {
         $('#largeVideoContainer').css('background',
             this.videoType === VIDEO_CONTAINER_TYPE && !isAvatar
-                ? '#000' : interfaceConfig.DEFAULT_BACKGROUND);
+                ? '#000' : '#fff');
     }
 
     /**

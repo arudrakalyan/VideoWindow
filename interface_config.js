@@ -68,13 +68,13 @@ var interfaceConfig = {
     /**
      * Whether to show thumbnails in filmstrip as a column instead of as a row.
      */
-    VERTICAL_FILMSTRIP: true,
+    VERTICAL_FILMSTRIP: false,
 
     // A html text to be shown to guests on the close page, false disables it
     CLOSE_PAGE_GUEST_HINT: false,
     RANDOM_AVATAR_URL_PREFIX: false,
     RANDOM_AVATAR_URL_SUFFIX: false,
-    FILM_STRIP_MAX_HEIGHT: 120,
+    FILM_STRIP_MAX_HEIGHT: 160,
 
     // Enables feedback star animation.
     ENABLE_FEEDBACK_ANIMATION: false,
@@ -100,7 +100,7 @@ var interfaceConfig = {
     AUDIO_LEVEL_SECONDARY_COLOR: 'rgba(255,255,255,0.2)',
     POLICY_LOGO: null,
     LOCAL_THUMBNAIL_RATIO: 16 / 9, // 16:9
-    REMOTE_THUMBNAIL_RATIO: 1, // 1:1
+    REMOTE_THUMBNAIL_RATIO: 16 / 9, // 1:1
     // Documentation reference for the live streaming feature.
     LIVE_STREAMING_HELP_LINK: 'https://jitsi.org/live',
 

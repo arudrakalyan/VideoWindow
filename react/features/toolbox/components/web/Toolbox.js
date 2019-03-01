@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ReactTooltip from 'react-tooltip';
 
 import {
     ACTION_SHORTCUT_TRIGGERED,
@@ -323,12 +324,19 @@ class Toolbox extends Component<Props> {
                 id = 'new-toolbox'>
                 <div className='button-group-controls'>
                   <button className="pen-tool" />
-                  <div className = 'button-group-thick'>
-                      <AudioMuteButton
-                          visible = { this._shouldShowButton('microphone') } />
-                      <HangupButton
-                          visible = { this._shouldShowButton('hangup') } />
-                  </div>
+                      <div className = 'button-group-thick'  data-tip data-for='global' data-place='right' data-type='light' data-effect='solid' data-class='light-green'>
+                          <AudioMuteButton
+                              visible = { this._shouldShowButton('microphone') } />
+                          <HangupButton
+                              visible = { this._shouldShowButton('hangup') } />
+                      </div>
+                        <ReactTooltip id='global' aria-haspopup='true'>
+                            <ol>
+                                <li>Your audio is now active an unmuted for 10 minutes</li>
+                                <li>To Toggle mute your microphone touch the microphone button</li>
+                                <li>to hand uo your audio touch the red hand up button</li>
+                            </ol>
+                        </ReactTooltip>
 
                   <div className = 'button-group-light' style={{'display': 'none'}}>
                       <AudioMuteButton

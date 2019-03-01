@@ -141,7 +141,8 @@ class Filmstrip extends Component <Props> {
         // modified, then the views will get blown away.
 
         return (
-            <div className = { `filmstrip ${this.props._className}` }>
+            
+            <div className = { `filmstrip` }>
                 { this.props._filmstripOnly
                     ? <Toolbar /> : this._renderToggleButton() }
                 <div

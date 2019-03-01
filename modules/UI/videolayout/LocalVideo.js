@@ -80,7 +80,8 @@ LocalVideo.prototype.createContainer = function() {
         <div class = 'videocontainer__toolbar'></div>
         <div class = 'videocontainer__toptoolbar'></div>
         <div class = 'videocontainer__hoverOverlay'></div>
-        <div class = 'displayNameContainer'></div>
+        <div class = 'videocontainer__bottom__text'></div>
+        <div class = 'videocontainer__top__text'></div>
         <div class = 'avatar-container'></div>`;
 
     return containerSpan;
