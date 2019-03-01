@@ -108,6 +108,15 @@
      }
   }
 
-.connection-indicator, #dominantspeakerindicator, .videocontainer__toptoolbar{
+.connection-indicator, #dominantspeakerindicator, .videocontainer__toptoolbar, .remote-video-menu-trigger, .remotevideomenu{
     display: none;
+}
+.videocontainer__toolbar .indicator-container, .videocontainer__toptoolbar .indicator-container{
+    float: right
+}
+
+#filmstripLocalVideoThumbnail{
+    position: absolute;
+    bottom: 165px;
+    right: 0;
 }

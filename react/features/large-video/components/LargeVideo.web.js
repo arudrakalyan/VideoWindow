@@ -1,7 +1,9 @@
 // @flow
 
 import React, { Component } from 'react';
-
+import ReactDom from 'react-dom';
+import Drawer from 'rc-drawer';
+import Sidebar from '../../sidebar';
 import { Captions } from '../../subtitles/';
 
 declare var interfaceConfig: Object;
@@ -22,13 +24,19 @@ export default class LargeVideo extends Component<{}> {
     constructor(props) {
         super(props);
         this.state = {
-            sidebarOpen: true
+            sidebarOpen: false
         };
         this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
     }
 
-    onSetSidebarOpen(open) {
-        this.setState({ sidebarOpen: open });
+    onSetSidebarOpen() {
+        this.setState({ sidebarOpen: !this.state.sidebarOpen });
+    }
+
+    onTouchEnd = () => {
+        this.setState({
+            sidebarOpen: false
+        });
     }
 
     render() {
@@ -36,8 +44,15 @@ export default class LargeVideo extends Component<{}> {
             <div
                 className = 'videocontainer'
                 id = 'largeVideoContainer'>
-                    <div className="burger-menu" />
-
+                    <div className="burger-menu" onClick={this.onSetSidebarOpen}/>
+                        <Drawer
+                             open={this.state.sidebarOpen}
+                             onMaskClick={this.onTouchEnd}
+                             handler={false}
+                             level={null}
+                             width="450px" >
+                                <Sidebar />
+                         </Drawer>
                 <div className='logo-element' />
                 <div id = 'sharedVideo'>
                     <div id = 'sharedVideoIFrame' />
