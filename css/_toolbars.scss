@@ -750,3 +750,22 @@
       }
     }
   }
+
+.TopRightTimeContainer{
+  position: absolute;
+  text-align: right;
+  right: 20px;
+  top: 20px;
+  .city{
+    font-size: 18px;
+  }
+  .address{
+    font-size: 18px;
+  }
+  .time{
+    font-size: 24px;
+  }
+  .audio-status{
+    font-size: 15px
+  }
+}

@@ -59,8 +59,6 @@ export default class LargeVideo extends Component<{}> {
                 </div>
                 <div id = 'etherpad' />
 
-
-
                 <div id = 'dominantSpeaker'>
                     <div className = 'dynamic-shadow' />
                     <div id = 'dominantSpeakerAvatarContainer' />
@@ -88,6 +86,12 @@ export default class LargeVideo extends Component<{}> {
                 { interfaceConfig.DISABLE_TRANSCRIPTION_SUBTITLES
                     || <Captions /> }
                 <span id = 'localConnectionMessage' />
+                <div className="TopRightTimeContainer">
+                    <div className="city">New York</div>
+                    <div className="address">City Hall, 22nd Floor</div>
+                    <div className="time">12: 55 PM</div>
+                    <div className="audio-status">Their Audio is Muted</div>
+                </div>
             </div>
         );
     }
