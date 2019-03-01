@@ -314,14 +314,16 @@ class Toolbox extends Component<Props> {
      * @returns {ReactElement}
      */
     render() {
-        const { _visible, _visibleButtons } = this.props;
+        const { _visible, _visibleButtons} = this.props;
         const rootClassNames = `new-toolbox ${_visible ? 'visible' : ''} ${
             _visibleButtons.size ? '' : 'no-buttons'}`;
+
 
         return (
             <div
                 className = { rootClassNames }
                 id = 'new-toolbox'>
+                    
                 <div className='button-group-controls'>
                   <button className="pen-tool" />
                       <div className = 'button-group-thick'  data-tip data-for='global' data-place='right' data-type='light' data-effect='solid' data-class='light-green'>

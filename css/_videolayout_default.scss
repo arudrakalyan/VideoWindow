@@ -46,6 +46,10 @@
         bottom: 0;
         left: 0;
         min-height: 14px;
+        background-color: #000;
+        font-size: 14px;
+        color: #fff;
+        width: 100%;
     }
 
     &__top__text{
@@ -53,6 +57,8 @@
         top: 0;
         left: 0;
         min-height: 14px;
+        color: #fff;
+        font-size: 14px;
     }
 
 
