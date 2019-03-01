@@ -211,11 +211,14 @@ class Conference extends Component<Props> {
                 || VIDEO_QUALITY_LABEL_DISABLED
                 || this.props._iAmRecorder;
 
+        const singleParticipant = this.props._participants.length < 2 ? (<div className="single-participant">You are the only connection, please wait for the another site to join, or contact your Video Window administrator for assistance.</div>) : '';
+
         return (
             <div
                 className = { this.props._layoutClassName }
                 id = 'videoconference_page'
                 onMouseMove = { this._onShowToolbar }>
+                    {singleParticipant}
                 <Notice />
                 <div id = 'videospace'>
                     <LargeVideo />
@@ -302,6 +305,7 @@ function _mapStateToProps(state) {
         _iAmRecorder: state['features/base/config'].iAmRecorder,
         _layoutClassName: LAYOUT_CLASSNAMES[currentLayout],
         _room: state['features/base/conference'].room,
+        _participants: state['features/base/participants'],
         _shouldDisplayTileView: shouldDisplayTileView(state)
     };
 }
