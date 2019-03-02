@@ -312,7 +312,7 @@ SmallVideo.prototype.updateStatusBar = function() {
                 { this.isAudioMuted
                     ? <AudioMutedIndicator
                         tooltipPosition = { tooltipPosition } />
-                    : null }
+                    : <div className='flimstip-icon-mic' />}
                 { this.isVideoMuted
                     ? <VideoMutedIndicator
                         tooltipPosition = { tooltipPosition } />
