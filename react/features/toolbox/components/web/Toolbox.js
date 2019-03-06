@@ -296,6 +296,7 @@ class Toolbox extends Component<Props> {
         }
     }
 
+
     /**
      * Removes keyboard shortcuts registered by this component.
      *

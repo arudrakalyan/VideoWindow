@@ -9,10 +9,16 @@ export default class Sidebar extends Component {
      * @inheritdoc
      * @returns {ReactElement}
      */
+
+    handleClick = () =>{
+        this.props.onTouchEnd()
+    }
+
     render() {
         return (
           <React.Fragment>
-            <div className='sidebar-conainer'>
+            <div className='sidebar-container'>
+            {this.props.open ? <div className='close-drawer' onClick={this.props.close} /> : ''}
               <div className='privacy'>
                 <h4>Privacy (Minutes)</h4>
                 <input type='text' placeholder='Not available in Beta' />

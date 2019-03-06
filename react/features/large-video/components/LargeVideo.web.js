@@ -47,12 +47,12 @@ export default class LargeVideo extends Component<{}> {
                     <div className="burger-menu" onClick={this.onSetSidebarOpen}/>
                         <Drawer
                              open={this.state.sidebarOpen}
-                             onMaskClick={this.onTouchEnd}
                              handler={false}
                              level={null}
                              width="450px" >
-                                <Sidebar />
+                                <Sidebar open={this.state.sidebarOpen}  close={this.onTouchEnd}/>
                          </Drawer>
+                <div className='logo-vw' />
                 <div className='logo-element' />
                 <div id = 'sharedVideo'>
                     <div id = 'sharedVideoIFrame' />

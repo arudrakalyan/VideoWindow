@@ -72,6 +72,12 @@ class AudioMuteButton extends AbstractAudioMuteButton<Props, *> {
                 'keyboardShortcuts.mute');
     }
 
+
+    componentWillReceiveProps(nextProps, nextContext) {
+        console.log(nextProps)
+    }
+
+
     /**
      * Unregisters the keyboard shortcut that toggles the audio muting.
      *
